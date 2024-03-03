@@ -49,5 +49,5 @@ dnf install mysql -y &>>/tmp/expense.log
 echo $?
 
 Print_Heading "Load Schema"
-mysql -h 172.31.30.52 -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>/tmp/expense.log
+mysql -h 172.31.30.202 -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>/tmp/expense.log
 echo $? 
