@@ -1,6 +1,6 @@
 source common.sh
 
-mysql_root_password=ExpenseApp@1
+mysql_root_password = "ExpenseApp@1"
 
 Print_Heading "Disable default NodeJs"
 dnf module disable nodejs -y &>>/tmp/expense.log
@@ -51,5 +51,5 @@ dnf install mysql -y &>>/tmp/expense.log
 echo $?
 
 Print_Heading "Load Schema"
-mysql -h 172.31.30.52 -uroot -p{mysql_root_password} < /app/schema/backend.sql &>>/tmp/expense.log
-echo$?
+mysql -h 172.31.30.52 -uroot -p${mysql_root_password} < /app/schema/backend.sql &>>/tmp/expense.log
+echo$? 
