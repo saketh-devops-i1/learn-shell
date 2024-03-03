@@ -11,4 +11,4 @@ echo $?
 
 Print_Heading "Change root pwd"
 mysql_secure_installation --set-root-pass ExpenseApp@1
-echo $1
+echo $?
