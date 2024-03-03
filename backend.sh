@@ -19,7 +19,7 @@ useradd expense &>>/tmp/expense.log
 echo $?
 
 Print_Heading "Backend Service"
-cp backedn.service /etc/systemd/system/backend.service &>>/tmp/expense.log
+cp backend.service /etc/systemd/system/backend.service &>>/tmp/expense.log
 echo $?
 
 Print_Heading "Setup APP directory"
