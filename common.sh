@@ -19,7 +19,7 @@ App_PreReq() {
   rm -rf ${app_dir} &>>$LOG
   Check_Status $?
 
-  Print_Task_Heading "Create App Directory"
+  Print_Heading "Create App Directory"
   mkdir ${app_dir} &>>$LOG
   Check_Status $?
 
